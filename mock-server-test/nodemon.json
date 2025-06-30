@@ -1,0 +1,5 @@
+{
+  "watch": ["server.js", "config.js", "utils.js"],
+  "ext": "js",
+  "ignore": ["node_modules/", "apiData.js"]
+}

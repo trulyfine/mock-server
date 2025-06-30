@@ -1,0 +1,30 @@
+{
+  "name": "mock-server-dev",
+  "version": "1.0.0",
+  "description": "mock-server",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -- require @babel/register server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trulyfine/mock-server.git"
+  },
+  "author": "linc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trulyfine/mock-server/issues"
+  },
+  "homepage": "https://github.com/trulyfine/mock-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/node": "^7.27.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.17.12",
+    "@babel/preset-env": "^7.27.2"
+  }
+}
