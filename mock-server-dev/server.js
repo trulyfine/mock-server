@@ -10,7 +10,7 @@ const {
     groupMode,
     mockApis
 } = require('./config')
-const exp = require('constants')
+// const exp = require('constants')
 const app = express();
 const mockData = {
     ...apiData
@@ -55,6 +55,7 @@ app.use((req, res, next) => {
         if (typeof value === 'number') {
             return String(value)
         }
+        return value;
     })
     key = groupMode === 'hash' ? generateHash(tmp) : tmp;
     const mockResponse = key ? mockData[req.originalUrl]?.[key] : mockData[req.originalUrl];
@@ -106,6 +107,7 @@ function removeIgnoredFields (obj, ignoredParams) {
     .forEach((key) => {
         sortedObj[key] = obj[key];
     })
+    return sortedObj;
 }
 
 function generateHash(data) {

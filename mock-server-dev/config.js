@@ -5,11 +5,13 @@ const targetServer = 'http://10.40.10/113:8088' // 设置目标服务器地址
 const ignoreParams = [
     'login_operator',
     'create_operator',
-    'login_conpany'
+    'login_operator_name',
+    'login_company',
+    'mac',
+    'volserial_no'
 ]
 const groupMode = 'params' // 分组模式 hash|params|none
 const mockApis = [
-    '/g/ar_uftdb/v/example',
     ...oms
 ]
 
